@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		690E2091168D8C2B00C04401 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690E2090168D8C2B00C04401 /* UIKit.framework */; };
+		690E2093168D8C2B00C04401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690E2092168D8C2B00C04401 /* Foundation.framework */; };
+		690E2095168D8C2B00C04401 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690E2094168D8C2B00C04401 /* CoreGraphics.framework */; };
+		690E209B168D8C2B00C04401 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 690E2099168D8C2B00C04401 /* InfoPlist.strings */; };
+		690E209D168D8C2B00C04401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E209C168D8C2B00C04401 /* main.m */; };
+		690E20A1168D8C2B00C04401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E20A0168D8C2B00C04401 /* AppDelegate.m */; };
+		690E20A3168D8C2B00C04401 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 690E20A2168D8C2B00C04401 /* Default.png */; };
+		690E20A5168D8C2B00C04401 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 690E20A4168D8C2B00C04401 /* Default@2x.png */; };
+		690E20A7168D8C2B00C04401 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 690E20A6168D8C2B00C04401 /* Default-568h@2x.png */; };
+		690E20AA168D8C2B00C04401 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690E20A8168D8C2B00C04401 /* MainStoryboard.storyboard */; };
+		690E20AD168D8C2B00C04401 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E20AC168D8C2B00C04401 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690E208C168D8C2B00C04401 /* mochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		690E2090168D8C2B00C04401 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		690E2092168D8C2B00C04401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		690E2094168D8C2B00C04401 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		690E2098168D8C2B00C04401 /* mochi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mochi-Info.plist"; sourceTree = "<group>"; };
+		690E209A168D8C2B00C04401 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		690E209C168D8C2B00C04401 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		690E209E168D8C2B00C04401 /* mochi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mochi-Prefix.pch"; sourceTree = "<group>"; };
+		690E209F168D8C2B00C04401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		690E20A0168D8C2B00C04401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		690E20A2168D8C2B00C04401 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		690E20A4168D8C2B00C04401 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		690E20A6168D8C2B00C04401 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		690E20A9168D8C2B00C04401 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		690E20AB168D8C2B00C04401 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		690E20AC168D8C2B00C04401 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		690E2089168D8C2B00C04401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690E2091168D8C2B00C04401 /* UIKit.framework in Frameworks */,
+				690E2093168D8C2B00C04401 /* Foundation.framework in Frameworks */,
+				690E2095168D8C2B00C04401 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690E2081168D8C2B00C04401 = {
+			isa = PBXGroup;
+			children = (
+				690E2096168D8C2B00C04401 /* mochi */,
+				690E208F168D8C2B00C04401 /* Frameworks */,
+				690E208D168D8C2B00C04401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		690E208D168D8C2B00C04401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				690E208C168D8C2B00C04401 /* mochi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		690E208F168D8C2B00C04401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690E2090168D8C2B00C04401 /* UIKit.framework */,
+				690E2092168D8C2B00C04401 /* Foundation.framework */,
+				690E2094168D8C2B00C04401 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		690E2096168D8C2B00C04401 /* mochi */ = {
+			isa = PBXGroup;
+			children = (
+				690E209F168D8C2B00C04401 /* AppDelegate.h */,
+				690E20A0168D8C2B00C04401 /* AppDelegate.m */,
+				690E20A8168D8C2B00C04401 /* MainStoryboard.storyboard */,
+				690E20AB168D8C2B00C04401 /* ViewController.h */,
+				690E20AC168D8C2B00C04401 /* ViewController.m */,
+				690E2097168D8C2B00C04401 /* Supporting Files */,
+			);
+			path = mochi;
+			sourceTree = "<group>";
+		};
+		690E2097168D8C2B00C04401 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				690E2098168D8C2B00C04401 /* mochi-Info.plist */,
+				690E2099168D8C2B00C04401 /* InfoPlist.strings */,
+				690E209C168D8C2B00C04401 /* main.m */,
+				690E209E168D8C2B00C04401 /* mochi-Prefix.pch */,
+				690E20A2168D8C2B00C04401 /* Default.png */,
+				690E20A4168D8C2B00C04401 /* Default@2x.png */,
+				690E20A6168D8C2B00C04401 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		690E208B168D8C2B00C04401 /* mochi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690E20B0168D8C2B00C04401 /* Build configuration list for PBXNativeTarget "mochi" */;
+			buildPhases = (
+				690E2088168D8C2B00C04401 /* Sources */,
+				690E2089168D8C2B00C04401 /* Frameworks */,
+				690E208A168D8C2B00C04401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mochi;
+			productName = mochi;
+			productReference = 690E208C168D8C2B00C04401 /* mochi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		690E2083168D8C2B00C04401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "大竹 雅登";
+			};
+			buildConfigurationList = 690E2086168D8C2B00C04401 /* Build configuration list for PBXProject "mochi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 690E2081168D8C2B00C04401;
+			productRefGroup = 690E208D168D8C2B00C04401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				690E208B168D8C2B00C04401 /* mochi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		690E208A168D8C2B00C04401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690E209B168D8C2B00C04401 /* InfoPlist.strings in Resources */,
+				690E20A3168D8C2B00C04401 /* Default.png in Resources */,
+				690E20A5168D8C2B00C04401 /* Default@2x.png in Resources */,
+				690E20A7168D8C2B00C04401 /* Default-568h@2x.png in Resources */,
+				690E20AA168D8C2B00C04401 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		690E2088168D8C2B00C04401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690E209D168D8C2B00C04401 /* main.m in Sources */,
+				690E20A1168D8C2B00C04401 /* AppDelegate.m in Sources */,
+				690E20AD168D8C2B00C04401 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		690E2099168D8C2B00C04401 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690E209A168D8C2B00C04401 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		690E20A8168D8C2B00C04401 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690E20A9168D8C2B00C04401 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		690E20AE168D8C2B00C04401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		690E20AF168D8C2B00C04401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		690E20B1168D8C2B00C04401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mochi/mochi-Prefix.pch";
+				INFOPLIST_FILE = "mochi/mochi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		690E20B2168D8C2B00C04401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mochi/mochi-Prefix.pch";
+				INFOPLIST_FILE = "mochi/mochi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		690E2086168D8C2B00C04401 /* Build configuration list for PBXProject "mochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690E20AE168D8C2B00C04401 /* Debug */,
+				690E20AF168D8C2B00C04401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690E20B0168D8C2B00C04401 /* Build configuration list for PBXNativeTarget "mochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690E20B1168D8C2B00C04401 /* Debug */,
+				690E20B2168D8C2B00C04401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 690E2083168D8C2B00C04401 /* Project object */;
+}

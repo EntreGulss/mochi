@@ -8,13 +8,94 @@
 
 #import "AppDelegate.h"
 
+#import "ScoreManager.h"
+
+// ======= Game Center =======
+#import <GameKit/GameKit.h>
+#import "MyGameCenter.h"
+// ===========================
+
 @implementation AppDelegate
 
+//--------------------------------------------------------------//
+#pragma mark -- 初期化 --
+//--------------------------------------------------------------//
+
+static AppDelegate* _sharaedInstance = nil;
+
++ (AppDelegate*)sharedController
+{
+    return _sharaedInstance;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+	// 共用インスタンスの設定
+	_sharaedInstance = self;
+    
+	return self;
+}
+
+//--------------------------------------------------------------//
+#pragma mark -- UIApplicationDelegate --
+//--------------------------------------------------------------//
+
+// アプリの初期化処理
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // データを読み込む
+    [[ScoreManager sharedManager] load];
+    
+    // ==== Game Center Login ====
+    [[MyGameCenter sharedManager] loginGameCenter];
+    // ===========================
+    
+    // ===== 初回起動時の処理 =======
+    // ロードしたことあるバージョンを調べる
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    float loadedVersion = [[defaults objectForKey:@"version"] floatValue];
+    // このバンドルのバージョンを調べる
+    float bundleVersion = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] floatValue];
+    
+    // バージョンアップされてればバージョンアップ情報を表示
+    if (!loadedVersion || bundleVersion > loadedVersion) {
+        NSLog(@"初回起動時");
+        // アラート表示
+        NSString *titleStr = @"匠くんの餅つき v1.1";
+        NSString *bodyStr = @"世界ランキングに対応しました！\nNo.1を目指しましょう！";
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:titleStr
+                                                            message:bodyStr
+                                                           delegate:self
+                                                  cancelButtonTitle:@"はじめる"
+                                                  otherButtonTitles:nil];
+        [alertView show];        
+        // 現在のバンドルバージョンを記録
+        [defaults setObject:[NSNumber numberWithFloat:bundleVersion] forKey:@"version"];
+        
+        // 前バージョンでの最高スコアを、初回起動時のみ送信
+        [[MyGameCenter sharedManager] submitScore:[[ScoreManager sharedManager].maxScore.score intValue] category:@"score"];
+    }
+    // ===========================
+    
     return YES;
 }
+// 終了直前の後片付け処理
+- (void)applicationWillTerminate:(UIApplication*)application
+{
+    // データを保存する
+    [[ScoreManager sharedManager] save];
+    
+    // ======= Google Analytics 2.0v Track Event ========
+    [GAManager postTrackView:@"entry_point"];
+    // ==================================================
+}
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -36,11 +117,6 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end

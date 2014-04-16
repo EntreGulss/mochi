@@ -11,4 +11,48 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    // ============ Nend ===============
+    #import "NADView.h"
+    // リリース用
+    #define NENDAPIKEY @"3adcd79451b4523b8ff32d03f16678ee1518ebe8"
+    #define NENDSPOTID @"31137"
+    // ==============================
+
+    //============ AdMob ===============
+    #define ADMOB_UNIT_ID @"a150f15b109fc66" // パブリッシャーID
+    #define TESTMODE 0 // 1=Test, 0=Release
+    // AdMob用の広告ビュー
+    #import "GADBannerView.h"
+    //==================================
+
+    //====== Google Analytics v2.0 =====
+    #import "GAManager.h"
+    #import "GAITrackedViewController.h"
+    #import "GAI.h"
+    //==================================
+
+    // ======== App Store URL =======
+    #define APPURL @"https://itunes.apple.com/jp/app/jiangkunno-bingtsuki/id594411405?l=ja&ls=1&mt=8"
+    // ==============================
+
+    // ===== Button Sound =====
+    #import <AudioToolbox/AudioToolbox.h>
+    // ========================
+#endif
+
+// NSLogの無効化マクロ
+#ifdef NS_BLOCK_ASSERTIONS
+
+#ifndef NSLog
+// NSLogを無効にする
+#define NSLog( m, args... )
+#endif
+
+#else
+
+#ifndef NSLog
+#define NSLog( m, args... ) NSLog( m, ##args )
+#endif
+
 #endif
